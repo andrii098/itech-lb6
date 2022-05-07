@@ -1,0 +1,73 @@
+use lb6_var0;
+db.literature.insertMany(
+	[
+		{
+			"type": "Book", 
+			"name": "Современные операционные системы (4е изд.)",
+			"publication_date": "2015-01-01",
+			"publisher": "Питер",
+			"quantity": 5,
+			"ISBN": "978-5-888-15497-6",
+			"authours": "Таненбаум Э."
+		}, 
+
+		{
+			"type": "Newspaper", 
+			"name": "Вести Дергачевщины",
+			"publication_date": "2020-09-01",
+			"publisher": "Дергачевское издание",
+			"quantity": 20
+		}, 
+		
+		{
+			"type": "Journal", 
+			"name": "Человек паук герои и злодеи",
+			"publication_date": "2014-10-14",
+			"publisher": "Disney",
+			"quantity": 2,
+			"ISBN": "654-5-888-15497-6",
+			"journal number": 17,
+			"resource": "карточки"
+		}, 
+
+		{
+			"type": "Book", 
+			"name": "Practical Database Programming with Java",
+			"publication_date": "2011-02-03",
+			"publisher": "IEEE",
+			"quantity": 3,
+			"ISBN": "978-0-470-88940-4",
+			"authours": "Ying Bai"
+		}, 
+
+		{
+			"type": "Journal", 
+			"name": "Eva",
+			"publication_date": "2016-07-05",
+			"publisher": "Eva Incorporation",
+			"quantity": 1,
+			"ISBN": "978-5-496-01395-7",
+			"journal number": 32,
+			"resource": "Пробный маленький флакончик духов"
+		}, 
+
+		{
+			"type": "Newspaper", 
+			"name": "Симон",
+			"publication_date": "2021-03-07	",
+			"publisher": "Харьков",
+			"quantity": 50,
+			"ISBN": "978-5-496-01382-3"
+		}, 
+
+		{
+			"type": "Book", 
+			"name": "Delphi. Трюки и эффекты (+CD)",
+			"publication_date": "2007-05-18",
+			"publisher": "Питер",
+			"quantity": 1,
+			"ISBN": "978-5-91180-219-6",
+			"authours": "А. Чиртик, В. Борисок, Ю. Корвель",
+			"resource": "Компакт диск"
+		}
+	]);
