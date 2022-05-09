@@ -63,14 +63,14 @@
         		);
         		$uniqueAuthors = array();	
         		foreach ($cursor as $book) {
-        			if (array_key_exists('authours', $book)) {
-        				$auth = $book['authours'];
-        				if (!array_key_exists($auth, $uniqueAuthors)) {
-        					$uniquePubl[$auth] = $auth;
-        					echo "<option>$auth</option>";
-        				}	
-        			}
-        		}				
+
+                    if(!isset($book['authours']) || array_key_exists($book['authours'], $uniqueAuthors)){
+                        continue;
+                    }
+                    $auth = $book['authours'];
+                    $uniqueAuthors[$auth] = $auth;
+                    echo "<option>$auth</option>";
+                }
 			?>
 		</select>
 		<a href="by-author.htm">
